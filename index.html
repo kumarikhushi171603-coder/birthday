@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Surprise Box 🎁</title>
+    <style>
+        body,
+        html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            font-family: "Poppins", sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+        /* Background image */
+        
+        body {
+            background: url("https://img.freepik.com/free-psd/3d-rendering-elegant-birthday-background_23-2151888268.jpg") no-repeat center center/cover;
+        }
+        
+        .box {
+            cursor: pointer;
+            animation: bounce 2s infinite;
+            text
+        }
+        
+        .box img {
+            width: 200px;
+            max-width: 80%;
+            transition: transform 0.3s;
+        }
+        
+        .box img:hover {
+            transform: scale(1.1);
+        }
+        
+        @keyframes bounce {
+            0%,
+            100% {
+                transform: translateY(0);
+            }
+            50% {
+                transform: translateY(-15px);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box" onclick="openSurprise()">
+        <p> clik me</p>
+        <img src="https://pop-heaven.com/cdn/shop/files/birthday-basket-box-47466_400x.jpg?v=1749818692 " alt="Surprise Box">
+    </div>
+
+    <script>
+        function openSurprise() {
+            window.location.href = "welcome.html"; // Goes to the cake page
+        }
+    </script>
+</body>
+
+</html>
